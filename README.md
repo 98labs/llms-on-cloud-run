@@ -5,7 +5,7 @@ This repository includes the following scripts
 * build docker image
 * deploy docker container
 
-Connect using the `curl command`
+Connect ollama server using the `curl` command
 ```
 curl https://ollama-server-671820338183.asia-southeast1.run.app/api/generate -d '{
   "model": "llama3.2-vision",
@@ -14,7 +14,7 @@ curl https://ollama-server-671820338183.asia-southeast1.run.app/api/generate -d 
 }'
 ```
 
-Connect using `ollama`
+Connect ollama server using `ollama` terminal client
 ```
 # install ollama locally
 brew install ollama # mac
@@ -30,7 +30,7 @@ OLLAMA_HOST=https://ollama-server-671820338183.asia-southeast1.run.app/ ollama r
 OLLAMA_HOST=https://ollama-server-671820338183.asia-southeast1.run.app/ ollama run qwen2.5-coder:32b
 ```
 
-Bonus! Use open-webui to connect to ollama server
+Connect ollama server using open-webui
 ```
 # Pull docker image for open-webui
 docker pull ghcr.io/open-webui/open-webui:main
